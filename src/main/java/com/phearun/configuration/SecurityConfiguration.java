@@ -59,7 +59,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
     @EnableGlobalMethodSecurity(prePostEnabled = true, jsr250Enabled = true)
-    public static class GlobalSecurityConfiguration extends GlobalMethodSecurityConfiguration {
+    private static class GlobalSecurityConfiguration extends GlobalMethodSecurityConfiguration {
         @Override
         protected MethodSecurityExpressionHandler createExpressionHandler() {
             return new OAuth2MethodSecurityExpressionHandler();

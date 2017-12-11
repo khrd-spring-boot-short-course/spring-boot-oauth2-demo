@@ -1,4 +1,4 @@
-package com.phearun.security;
+package com.phearun.model;
 
 public enum Authorities {
     ROLE_ANONYMOUS,
